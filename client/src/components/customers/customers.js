@@ -12,9 +12,9 @@ class Customers extends Component {
     // Following code runs automatically once componet is mounted
     componentDidMount() {
         // We do not have to type full path because we already defined the proxy on client package.json
-        // fetch('http://localhost:8080/api/customers')
-        //     .then(res => res.json())
-        //     .then(customers => this.setState({customers: customers}, () => console.log('Customers fetched...', customers)))
+        fetch('http://https://fdr-react-express.herokuapp.com/api/customers')
+            .then(res => res.json())
+            .then(customers => this.setState({customers: customers}, () => console.log('Customers fetched...', customers)))
     }
 
     render() {
