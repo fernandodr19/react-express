@@ -13,5 +13,8 @@ app.get('/api/customers', (req, res) => {
     res.json(customers)
 })
 
-const port = 8080;
+const port = process.env.PORT || 8080;
+
+console.log(port)
+
 app.listen(port, () => console.log(`Server started on port ${port}`))
