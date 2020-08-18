@@ -12,6 +12,7 @@ app.get('/api/customers', (req, res) => {
         {id: 1, firstName: 'John', lastName: 'Doe1'},
         {id: 2, firstName: 'John', lastName: 'Doe2'},
         {id: 3, firstName: 'John', lastName: 'Doe3'},
+        {id: 4, firstName: 'John', lastName: 'Doe4'},
     ]
 
     console.log('Req processed, gonna return ' + customers)
