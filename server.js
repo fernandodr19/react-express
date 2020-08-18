@@ -2,7 +2,9 @@ const express = require('express')
 var cors = require('cors')
 
 const app = express()
+
 app.use(cors())
+console.log('cors setted up') 
 
 app.get('/api/customers', (req, res) => {
     // Load from DB here
