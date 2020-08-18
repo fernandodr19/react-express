@@ -1,6 +1,8 @@
-const express = require('express');
+const express = require('express')
+var cors = require('cors')
 
-const app = express();
+const app = express()
+app.use(cors())
 
 app.get('/api/customers', (req, res) => {
     // Load from DB here
