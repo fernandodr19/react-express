@@ -9,7 +9,7 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-app.get('https://fdr-react-express.herokuapp.com/api/customers', (req, res) => {
+app.get('/api/customers', (req, res) => {
     // Load from DB here
     const customers = [
         {id: 1, firstName: 'John', lastName: 'Doe1'},
