@@ -14,7 +14,7 @@ class Customers extends Component {
         // We do not have to type full path because we already defined the proxy on client package.json
         fetch('/api/customers')
             .then(res => res.json())
-            .then(customers => this.setState({customers: customers}, () => console.log('Customers fetched...', customers)))
+            .then(customers => this.setState({customers: customers}, () => console.log('Customers fetched....', customers)))
     }
 
     render() {
