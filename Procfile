@@ -1,1 +1,1 @@
-web: npm i && npm run dev
+web: npm install --only=dev && npm install && npm run dev
