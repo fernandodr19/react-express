@@ -14,6 +14,7 @@ app.get('/api/customers', (req, res) => {
         {id: 3, firstName: 'John', lastName: 'Doe3'},
     ]
 
+    console.log('Req processed, gonna return ' + customers)
     res.json(customers)
 })
 
